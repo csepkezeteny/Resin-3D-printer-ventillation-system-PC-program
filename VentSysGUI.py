@@ -2,12 +2,15 @@ import tkinter as tk
 import tkinter.ttk as ttk
 
 def updateData():
+    "Updates the datas received from the Arduino through Bluetooth"
     pass
 
 def emergencyButton():
+    "When the emergency stop button is pushed, the system will stop complitely"
     pass
 
 def sendConsole():
+    "Send the console's content"
     pass
 
 
