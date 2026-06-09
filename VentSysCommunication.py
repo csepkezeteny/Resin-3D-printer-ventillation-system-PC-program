@@ -1,6 +1,18 @@
 import serial
 import time
+import VentSysGUI as VSG
 
+serial_connection = serial.Serial(VSG.serial_port, VSG.serial_baud_rate, timeout=1)
+time.sleep(2)
+
+
+
+def readSerial():
+    read_serial = serial_connection.readline().decode().strip()
+
+def writeSerial():
+    pass
+#-----------------------------------------------------------
 ser = serial.Serial("COM4", 9600, timeout=1)
 time.sleep(2)
 
@@ -21,3 +33,5 @@ while True:
         print("Arduino:", response)
 
 ser.close()
+#-----------------------------------------------------------
+
